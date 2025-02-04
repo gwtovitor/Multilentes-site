@@ -1,0 +1,79 @@
+.talkingUs{
+    display: flex;
+    justify-self: center;
+    width: 80vw;
+    height: 70vh;
+    *{
+        font-family: "Poppins", serif;
+    }
+    .wrapperForm{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 0.5rem;
+        z-index: 2;
+        h1{
+            margin: 0;
+        }
+        .group{
+            display: flex;
+            gap: 1rem;
+            // justify-content: center;
+            align-items: center;
+            svg{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            background-color: #0053B8;
+            border-radius: 0.4rem;
+            gap: 1rem;
+            .inputWrapper{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                gap: 1rem;
+                input{
+                    width: calc(50% - 0.5rem);
+                    border: none;
+                    padding: 1rem;
+                    border-radius: .4rem;
+                }
+            }
+            textarea{
+                min-height: 100px;
+                padding: 1rem;
+            }
+            .btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: flex-end;
+                width: fit-content;
+                gap: 1rem;
+                padding: 0.5rem 1rem;
+                background-color: #A7CEFF;
+                border: none;
+                border-radius: 0.4rem;
+                svg{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+    .imgWrapper{
+        width: 50%;
+        img{
+            margin-left: -4rem;
+            margin-top: -1rem;
+            width: 100%;
+        }
+    }
+    
+    
+}
