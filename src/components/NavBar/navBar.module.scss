@@ -1,5 +1,7 @@
 .navBar{
     // display: flex;
     width: 100vw;
-    background-color: red !important;
+    .responsive-navbar-nav {
+        justify-content: flex-start !important; // Alinha os itens à esquerda
+      }
 }

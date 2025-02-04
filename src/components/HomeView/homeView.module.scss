@@ -1,0 +1,92 @@
+.homeView {
+	height: 90vh;
+	width: 100vw;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	.leftSide {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        flex-direction: column;
+		width: 50%;
+        gap: 2rem;
+        .title{
+            width: 70%;
+            h1{
+                margin: 0;
+                font-family: "Playfair Display", serif;
+                font-size: 4rem;
+            }
+            span{
+                color: #88858F;
+                font-family: "Poppins", serif;
+            }
+        }
+        .btnWrapper{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            gap: 1rem;
+            .contact{
+                cursor: pointer;
+                font-weight: 500;
+                color: #00306A;
+                background-color: #A7CEFF;
+                font-family: 'Poppins', serif;
+                border: none;
+                padding: 1rem 2rem;
+            }
+            .howItWorks{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                gap: 0.5rem;
+                font-weight: 700;
+                color: #0053B8;
+                background-color: transparent;
+                font-family: 'Poppins', serif;
+                border: none;
+                padding: 1rem 2rem;
+                svg{
+                    width: 8%;
+                }
+            }
+        }
+	}
+	.rightSide {
+		width: 50%;
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+		.imgLeft {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: 1rem;
+			width: 60%;
+            .image1{
+                width: 60%;
+            }
+            .image2{
+                width: 100%;
+            }
+		}
+		.imgRigth {
+			width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: 1rem;
+            .image3{
+                width: 100%;
+            }
+            .image4{
+                width: 100%;
+            }
+		}
+	}
+}
