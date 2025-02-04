@@ -1,7 +1,6 @@
 .brandings {
 	width: 100%;
 	background: #0053b8;
-	img {
-		// filter: brightness(0) invert(1);
-	}
+	display: flex;
+	justify-content: center;
 }
