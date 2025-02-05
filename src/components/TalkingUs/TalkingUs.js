@@ -3,7 +3,7 @@ import styles from './talkingUs.module.scss';
 
 export default function TalkingUs() {
 	return (
-		<div className={styles.talkingUs}>
+		<div id='contact' className={styles.talkingUs}>
 			<div className={styles.wrapperForm}>
 				<h1>Fale conosco</h1>
 				<div className={styles.group}>

@@ -1,7 +1,9 @@
-.navBar{
-    // display: flex;
-    width: 100vw;
-    .responsive-navbar-nav {
-        justify-content: flex-start !important; // Alinha os itens à esquerda
-      }
+.navBar {
+	// display: flex;
+	width: 100%;
+	>div  {
+    gap: 3rem;
+		// align-items: flex-start;
+		justify-content: flex-start !important; // Alinha os itens à esquerda
+	}
 }

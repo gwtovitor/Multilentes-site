@@ -11,15 +11,15 @@ export default function NavBar() {
 				link: '/',
 			},
 			{
-				text: 'Doc',
-				link: '#docs',
+				text: 'Produtos',
+				link: '#brandings',
 			},
 			{
-				text: 'Custom',
-				link: '#custom-bar',
+				text: 'Onde Estamos',
+				link: '#findus',
 			},
 			{
-				text: 'Contact',
+				text: 'Contato',
 				link: '#contact',
 			},
 		],
