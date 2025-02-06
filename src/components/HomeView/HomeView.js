@@ -3,7 +3,7 @@ import styles from './homeView.module.scss';
 
 export default function HomeView() {
 	return (
-		<div className={styles.homeView}>
+		<div id='home' className={styles.homeView}>
 			<div className={styles.leftSide}>
 				<div className={styles.title}>
 					<h1>Um atendimento de excelência</h1>

@@ -1,6 +1,13 @@
 import styles from './footer.module.scss';
 
 export default function Footer() {
+	function scrollToElement(elementId) {
+		const element = document.getElementById(elementId);
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+		} 
+	}
+	
 	return (
 		<div className={styles.footerWrapper}>
 			<div className={styles.message}>
@@ -23,10 +30,10 @@ export default function Footer() {
 						<span>CNPJ: 02.233.451/0001-02</span>
 					</div>
 					<div className={styles.rigthSide}>
-						<span>Home</span>
-						<span>Produtos</span>
-						<span>Onde Estamos</span>
-						<span>Contato</span>
+						<span onClick={()=>scrollToElement('home')}>Home</span>
+						<span onClick={()=>scrollToElement('brandings')}>Produtos</span>
+						<span onClick={()=>scrollToElement('findus')}>Onde Estamos</span>
+						<span onClick={()=>scrollToElement('contact')}>Contato</span>
 					</div>
 				</div>
                 <DashedLine/>

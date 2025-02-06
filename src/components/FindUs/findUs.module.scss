@@ -37,3 +37,39 @@
 		}
 	}
 }
+
+
+@media (max-width: 800px) {
+	.findUs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: unset;
+        width: 100%;
+        margin-top: 1rem;
+        .whereWeAre {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .bodyWrapper {
+
+                margin-left: unset;
+                width: 80%;
+                .wrapper{
+                    display: flex;
+                    gap: 0.4rem;
+                    font-size: 0.7rem;
+                    max-width: 100%;
+                    // justify-content: center;
+                    align-items: center;
+                    svg{
+                        width: 20px !important;
+                        height: 20px !important;
+                    }
+                }
+            }
+        }
+    }
+}

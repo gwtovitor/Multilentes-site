@@ -90,3 +90,47 @@
 		}
 	}
 }
+
+@media (max-width: 800px) {
+	.homeView {
+        height: unset !important;
+        flex-direction: column;
+        .leftSide {
+            width: 80%;
+            .title{
+                gap: 1rem;
+                width: 100%;
+                h1{
+                    width: 100%;
+                    text-wrap: no-wrap;
+                    font-size: 1.3rem;
+                }
+                span{
+                    font-size: 0.8rem;
+                }
+            }
+            .btnWrapper{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                gap: 1rem;
+                .contact{
+                    padding: 0.5rem 1rem;
+                }
+                .howItWorks{
+                    padding: 0.5rem 1rem;
+                    svg{
+                        width: 8%;
+                    }
+                }
+            }
+        }
+        .rightSide {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-end;
+            
+        }
+    }
+}
