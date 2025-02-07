@@ -95,6 +95,7 @@
 	.homeView {
         height: unset !important;
         flex-direction: column;
+        margin-top: 1.3rem;
         .leftSide {
             width: 80%;
             .title{
@@ -130,7 +131,21 @@
             display: flex;
             gap: 1rem;
             justify-content: flex-end;
-            
+            margin-top: 1rem;
+            .imgLeft {
+                .image1{
+                    display: none;
+                }
+                .image2{
+                    // width: 100%;
+                }
+            }
+            .imgRigth {
+                .image3{
+                    display: none;
+                }
+               
+            }
         }
     }
 }

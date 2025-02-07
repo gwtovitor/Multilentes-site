@@ -1,9 +1,16 @@
 .navBar {
 	// display: flex;
 	width: 100%;
-	>div  {
-    gap: 3rem;
+	> div {
+		gap: 3rem;
 		// align-items: flex-start;
-		justify-content: flex-start !important; // Alinha os itens à esquerda
+		justify-content: space-between; // Alinha os itens à esquerda
+	}
+}
+@media (max-width: 800px) {
+	.navBar {
+		> div {
+			justify-content: space-between;
+		}
 	}
 }

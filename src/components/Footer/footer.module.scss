@@ -38,9 +38,10 @@
 			}
 			.rigthSide {
 				display: flex;
+				flex-direction: column;
 				justify-content: flex-end;
 				gap: 2rem;
-				width: 50%;
+				// width: 50%;
 				span {
 					color: white;
 					cursor: pointer;
@@ -91,6 +92,7 @@
 				}
 				.rigthSide {
 					display: flex;
+					flex-direction: row;
 					justify-content: flex-end;
 					gap: 2rem;
 					width: 100%;

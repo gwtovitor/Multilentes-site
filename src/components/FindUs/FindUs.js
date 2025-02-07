@@ -6,12 +6,7 @@ export default function FindUs() {
 		<div id="findus" className={styles.findUs}>
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9240129682366!2d-51.2021208!3d-30.0103382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979951a7ba81f%3A0xde95a71faa356a4!2sAv.%20S%C3%A3o%20Pedro%2C%20714%20-%20S%C3%A3o%20Geraldo%2C%20Porto%20Alegre%20-%20RS%2C%2090230-123!5e0!3m2!1spt-BR!2sbr!4v1738697640374!5m2!1spt-BR!2sbr"
-				style={{
-					width: '50%',
-					height: '70%',
-					border: 'none',
-					borderRadius: '10px',
-				}}
+				className={styles.iframe}
 				allowfullscreen=""
 				loading="lazy"
 			></iframe>
