@@ -49,7 +49,7 @@ export default function Footer() {
 	);
 }
 
-function DashedLine() {
+export function DashedLine() {
     return <div style={{ borderTop: "2px dashed #888", width: "100%", margin: "10px 0" }} />;
   }
   

@@ -1,9 +1,45 @@
 .brandings {
-	width: 100%;
+	width: calc(100% - 2rem);
 	background: #0053b8;
 	display: flex;
 	justify-content: center;
-	img{
-		max-width: 100%;
+	.wrapperImage {
+		width: 80%;
+		display: flex;
+		justify-content: space-around;
+		// padding: 1rem 1rem;
+		gap: 1rem;
+		align-items: center;
+		flex-wrap: wrap;
+		.img {
+			height: fit-content;
+			max-height: 80%;
+			// width: 10%;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.brandings {
+		width: 100%;
+		background: #0053b8;
+		display: flex;
+		justify-content: center;
+		margin-top: 1rem;
+		.wrapperImage {
+			width: 80%;
+			display: flex;
+			justify-content: space-around;
+			// padding: 1rem 1rem;
+			gap: 1rem;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 1rem 0px;
+			.img {
+				height: fit-content;
+				max-height: 80%;
+				width: 40%;
+			}
+		}
 	}
 }
