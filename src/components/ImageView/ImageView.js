@@ -4,12 +4,8 @@ import styles from './imageView.module.scss';
 export default function ImageView() {
 	const images = [
 		{ image: 'assets/ImageView/1.png', text: 'Óculos de Sol' },
-		{ image: 'assets/ImageView/2.png', text: 'Óculos de Grau' },
-		{ image: 'assets/ImageView/3.png', text: 'Óculos Clip-On' },
-		// { image: 'assets/ImageView/4.png', text: 'Óculos de Sol' },
-		{ image: 'assets/ImageView/5.png', text: 'Óculos de Grau' },
-		{ image: 'assets/ImageView/6.png', text: 'Óculos Clip-On' },
-		{ image: 'assets/ImageView/7.png', text: 'Óculos de Sol' },
+		{ image: 'assets/ImageView/8.png', text: 'Óculos de Grau' },
+		{ image: 'assets/ImageView/7.png', text: 'Lentes de contato' },
 	];
 
 	return (
