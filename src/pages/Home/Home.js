@@ -5,6 +5,7 @@ import HomeView from '../../components/HomeView/HomeView';
 import ImageView from '../../components/ImageView/ImageView';
 import NavBar from '../../components/NavBar/NavBar';
 import TalkingUs from '../../components/TalkingUs/TalkingUs'
+import WppBtn from '../../components/WppBtn/WppBtn'
 import styles from './home.module.scss';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
 			<FindUs/>
 			<TalkingUs/>
 			<Footer/>
+			<WppBtn/>
 		</div>
 	);
 }
