@@ -25,9 +25,11 @@ export default function Footer() {
 							Avenida São Pedro, 720 sala 201- Bairro São Geraldo-
 							Porto Alegre- RS 90020-011
 						</span>
-						<span>Multilentes@multilentes.com.br</span>
-						<span>CNPJ: 55.691.684/0001-07</span>
 						<span>Estacionamento av. São Pedro, 754 e 733</span>
+						<span>Segunda a sexta das 9h às 17:30</span>
+						<span>multilentes@multilentes.com.br</span>
+						<span>(51) 3012-0226</span>
+						<span>CNPJ: 55.691.684/0001-07</span>
 					</div>
 					<div className={styles.rigthSide}>
 						<span onClick={() => scrollToElement('home')}>
