@@ -1,22 +1,20 @@
 import styles from './footer.module.scss';
 
-export default function Footer() {
-	function scrollToElement(elementId) {
-		const element = document.getElementById(elementId);
-		if (element) {
-			element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-		} 
+export function scrollToElement(elementId) {
+	const element = document.getElementById(elementId);
+	if (element) {
+		element.scrollIntoView({ behavior: 'smooth', block: 'center' });
 	}
-	
+}
+export default function Footer() {
 	return (
 		<div className={styles.footerWrapper}>
 			<div className={styles.message}>
 				<span>
-					ATENÇÃO: NOSSO OBJETIVO É VENDER LENTES DE CONTATO PARA QUEM
-					FEZ ADAPTAÇÃO COM MÉDICO OFTALMOLOGISTA E RECEBEU ORIENTAÇÃO
-					ADEQUADA, QUANTO AO USO E CUIDADOS. CONSULTE REGULARMENTE
-					SEU MÉDICO OFTALMOLOGISTA PARA AVALIAR A SAÚDE DE SEUS OLHOS
-					E SABER SE PODE USAR OU CONTINUAR USANDO LENTES DE CONTATO.
+					Nossa equipe é composta de técnicos ópticos e profissionais
+					com vasta experiência em lentes de contato e óculos de grau.
+					Nosso compromisso é com a saúde visual e a satisfação dos
+					nossos clientes.
 				</span>
 			</div>
 			<div className={styles.footer}>
@@ -24,19 +22,29 @@ export default function Footer() {
 					<div className={styles.leftSide}>
 						<img src="/assets/logoBgBlack.png" />
 						<span>
-							Av. São Pedro, 714 – São Geraldo – Porto Alegre/RS –
-							90230-123
+							Avenida São Pedro, 720 sala 201- Bairro São Geraldo-
+							Porto Alegre- RS 90020-011
 						</span>
-						<span>CNPJ: 02.233.451/0001-02</span>
+						<span>Multilentes@multilentes.com.br</span>
+						<span>CNPJ: 55.691.684/0001-07</span>
+						<span>Estacionamento av. São Pedro, 754 e 733</span>
 					</div>
 					<div className={styles.rigthSide}>
-						<span onClick={()=>scrollToElement('home')}>Home</span>
-						<span onClick={()=>scrollToElement('brandings')}>Produtos</span>
-						<span onClick={()=>scrollToElement('findus')}>Onde Estamos</span>
-						<span onClick={()=>scrollToElement('contact')}>Contato</span>
+						<span onClick={() => scrollToElement('home')}>
+							Home
+						</span>
+						<span onClick={() => scrollToElement('brandings')}>
+							Produtos
+						</span>
+						<span onClick={() => scrollToElement('findus')}>
+							Onde Estamos
+						</span>
+						<span onClick={() => scrollToElement('contact')}>
+							Contato
+						</span>
 					</div>
 				</div>
-                <DashedLine/>
+				<DashedLine />
 				<div className={styles.copyrigth}>
 					<span>Desenvolvido por Pixel Space</span>
 					<span>
@@ -50,6 +58,13 @@ export default function Footer() {
 }
 
 export function DashedLine() {
-    return <div style={{ borderTop: "2px dashed #888", width: "100%", margin: "10px 0" }} />;
-  }
-  
+	return (
+		<div
+			style={{
+				borderTop: '2px dashed #888',
+				width: '100%',
+				margin: '10px 0',
+			}}
+		/>
+	);
+}

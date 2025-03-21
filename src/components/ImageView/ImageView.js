@@ -3,9 +3,9 @@ import styles from './imageView.module.scss';
 
 export default function ImageView() {
 	const images = [
-		{ image: 'assets/ImageView/1.png', text: 'Óculos de Sol' },
-		{ image: 'assets/ImageView/8.png', text: 'Óculos de Grau' },
-		{ image: 'assets/ImageView/7.png', text: 'Lentes de contato' },
+		{ image: 'assets/ImageView/8.jpg', text: 'Óculos de Sol' },
+		{ image: 'assets/ImageView/7.jpg', text: 'Óculos de Grau' },
+		{ image: 'assets/ImageView/5.png', text: 'Lentes de contato' },
 	];
 
 	return (

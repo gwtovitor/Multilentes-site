@@ -2,155 +2,159 @@
 	height: 90vh;
 	width: 100%;
 	display: flex;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 	.leftSide {
-        display: flex;
-        // justify-content: center;
-        align-items: start;
-        flex-direction: column;
+		display: flex;
+		// justify-content: center;
+		align-items: start;
+		flex-direction: column;
 		width: 40%;
-        gap: 3rem;
-        // border: 1px solid red;
-        .title{
-            width: 70%;
-            h1{
-                margin: 0;
-                font-family: "Playfair Display", serif;
-                font-size: 4rem;
-            }
-            span{
-                color: #88858F;
-                font-family: "Poppins", serif;
-            }
-        }
-        .btnWrapper{
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            gap: 1rem;
-            .contact{
-                cursor: pointer;
-                font-weight: 500;
-                color: #00306A;
-                background-color: #A7CEFF;
-                font-family: 'Poppins', serif;
-                border: none;
-                padding: 1rem 2rem;
-            }
-            .howItWorks{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                gap: 0.5rem;
-                font-weight: 700;
-                color: #0053B8;
-                background-color: transparent;
-                font-family: 'Poppins', serif;
-                border: none;
-                padding: 1rem 2rem;
-                svg{
-                    width: 8%;
-                }
-            }
-        }
+		gap: 3rem;
+		// border: 1px solid red;
+		.title {
+			width: 70%;
+			h1 {
+				margin: 0;
+				font-family: 'Playfair Display', serif;
+				font-size: 4rem;
+			}
+			span {
+				color: #88858f;
+				font-family: 'Poppins', serif;
+			}
+		}
+		.btnWrapper {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			gap: 1rem;
+			.contact {
+				cursor: pointer;
+				font-weight: 500;
+				color: #00306a;
+				background-color: #a7ceff;
+				font-family: 'Poppins', serif;
+				border: none;
+				padding: 1rem 2rem;
+			}
+			.howItWorks {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				gap: 0.5rem;
+				font-weight: 700;
+				color: #0053b8;
+				background-color: transparent;
+				font-family: 'Poppins', serif;
+				border: none;
+				padding: 1rem 2rem;
+				svg {
+					width: 8%;
+				}
+			}
+		}
 	}
 	.rightSide {
 		width: 50%;
-        display: flex;
-        gap: 1rem;
-        justify-content: flex-end;
-        align-self: flex-end;
+		display: flex;
+		gap: 1rem;
+		justify-content: flex-end;
+		align-self: flex-end;
 		.imgLeft {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: flex-end;
-            gap: 1rem;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: flex-end;
+			gap: 1rem;
 			width: 60%;
-           
-            .image1{
-                width: 60%;
-            }
-            .image2{
-                width: 100%;
-            }
+
+			.image1 {
+				width: 90%;
+				border-radius: 1rem 0rem 0rem 0rem;
+			}
+			.image2 {
+				width: 100%;
+				border-radius: 1rem 0rem 0rem 0rem;
+			}
 		}
 		.imgRigth {
 			width: 40%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: flex-end;
-            gap: 1rem;
-            .image3{
-                width: 100%;
-            }
-            .image4{
-                width: 100%;
-                border-radius: 1rem 1rem 0rem 0rem;
-            }
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: flex-end;
+			gap: 1rem;
+			.image3 {
+				max-height: 100% !important;
+				width: 100%;
+                align-self: flex-end;
+			}
+			.image4 {
+				width: 100%;
+				// border-radius: 0rem 1rem 0rem 0rem;
+			}
 		}
 	}
 }
 
 @media (max-width: 800px) {
 	.homeView {
-        height: unset !important;
-        flex-direction: column;
-        margin-top: 1.3rem;
-        .leftSide {
-            width: 80%;
-            .title{
-                gap: 1rem;
-                width: 100%;
-                h1{
-                    width: 100%;
-                    text-wrap: no-wrap;
-                    font-size: 1.3rem;
-                }
-                span{
-                    font-size: 0.8rem;
-                }
-            }
-            .btnWrapper{
-                display: flex;
-                width: 100%;
-                justify-content: center;
-                gap: 1rem;
-                .contact{
-                    padding: 0.5rem 1rem;
-                }
-                .howItWorks{
-                    padding: 0.5rem 1rem;
-                    svg{
-                        width: 8%;
-                    }
-                }
-            }
-        }
-        .rightSide {
-            width: 100%;
-            display: flex;
-            gap: 1rem;
-            justify-content: flex-end;
-            margin-top: 1rem;
-            .imgLeft {
-                width: 100%;
-                .image1{
-                    display: none;
-                }
-                .image2{
-                    width: 100%;
-                    align-self: flex-end;
-                    // border: 1px solid red;
-                }
-            }
-            .imgRigth {
-                display: none;
-                           
-            }
-        }
-    }
+		height: unset !important;
+		flex-direction: column;
+		margin-top: 1.3rem;
+		.leftSide {
+			width: 80%;
+			.title {
+				gap: 1rem;
+				width: 100%;
+				h1 {
+					width: 100%;
+					text-wrap: no-wrap;
+					font-size: 1.3rem;
+				}
+				span {
+					font-size: 0.8rem;
+				}
+			}
+			.btnWrapper {
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				gap: 1rem;
+				.contact {
+					padding: 0.5rem 1rem;
+				}
+				.howItWorks {
+					padding: 0.5rem 1rem;
+					svg {
+						width: 8%;
+					}
+				}
+			}
+		}
+		.rightSide {
+			width: 100%;
+			display: flex;
+			gap: 1rem;
+			justify-content: flex-end;
+			margin-top: 1rem;
+			.imgLeft {
+				width: 100%;
+				.image1 {
+					display: none;
+				}
+				.image2 {
+					width: 90%;
+					align-self: center;
+					// border: 1px solid red;
+					border-radius: 1rem 1rem 0rem 0rem;
+				}
+			}
+			.imgRigth {
+				display: none;
+			}
+		}
+	}
 }

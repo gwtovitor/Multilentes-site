@@ -13,8 +13,8 @@
 		flex-wrap: wrap;
 		.img {
 			height: fit-content;
-			max-height: 80%;
-			// width: 10%;
+			width: 10%;
+			filter: grayscale(100%) brightness(0.3);
 		}
 	}
 }

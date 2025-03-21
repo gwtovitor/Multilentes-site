@@ -23,7 +23,7 @@ export default function TalkingUs() {
                 </div>
 			</div>
             <div className={styles.imgWrapper}>
-                <img src='/assets/HomeView/2.png'/>
+                <img src='/assets/HomeView/1.jpg'/>
             </div>
 		</div>
 	);
