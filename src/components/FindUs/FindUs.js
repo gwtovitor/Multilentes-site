@@ -5,7 +5,7 @@ export default function FindUs() {
 	return (
 		<div id="findus" className={styles.findUs}>
 			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9240129682366!2d-51.2021208!3d-30.0103382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979951a7ba81f%3A0xde95a71faa356a4!2sAv.%20S%C3%A3o%20Pedro%2C%20714%20-%20S%C3%A3o%20Geraldo%2C%20Porto%20Alegre%20-%20RS%2C%2090230-123!5e0!3m2!1spt-BR!2sbr!4v1738697640374!5m2!1spt-BR!2sbr"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.9254015984975!2d-51.20469048814202!3d-30.01029832959056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979951a4956eb%3A0x3d84ec101e09c74e!2sAv.%20S%C3%A3o%20Pedro%2C%20720%20-%20201%20-%20S%C3%A3o%20Geraldo%2C%20Porto%20Alegre%20-%20RS%2C%2090230-123!5e0!3m2!1spt-BR!2sbr!4v1742847037825!5m2!1spt-BR!2sbr"
 				className={styles.iframe}
 				allowfullscreen=""
 				loading="lazy"
@@ -17,15 +17,13 @@ export default function FindUs() {
 					<div className={styles.wrapper}>
 						<Location />
 						<span>
-							Av. São Pedro, 714 – São Geraldo, Porto Alegre – RS,
-							90230-123
+							Avenida São Pedro, Nº 720, Sala 201- Bairro São Geraldo-
+							Porto Alegre- RS 90020-011
 						</span>
 					</div>
 					<div className={styles.wrapper}>
 						<Hour />
-						<span>
-							Segunda-Sexta: 08:00 – 18:00 Sábado: 09:30 – 12:30
-						</span>
+						<span>Segunda-feira á Sexta-feira das 9h às 17:30</span>
 					</div>
 				</div>
 			</div>

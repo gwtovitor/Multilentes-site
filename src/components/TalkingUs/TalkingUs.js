@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from './talkingUs.module.scss';
-import { Mail, Msg } from '../utils/icons';
+import { Mail, Msg, Phone2 } from '../utils/icons';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function TalkingUs() {
@@ -64,7 +64,11 @@ export default function TalkingUs() {
 				</div>
 				<div className={styles.group}>
 					<Msg />
-					<span>(51) 993.483.947</span>
+					<span>(51) 9.9348-3947</span>
+				</div>
+				<div className={styles.group}>
+					<Phone2 />
+					<span>(51) 3012-0226</span>
 				</div>
 				<form
 					ref={formRef}
