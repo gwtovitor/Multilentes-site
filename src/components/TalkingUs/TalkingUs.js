@@ -1,13 +1,16 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import styles from './talkingUs.module.scss';
 import { Mail, Msg } from '../utils/icons';
+
 export default function TalkingUs() {
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
 		message: '',
 	});
+	const formRef = useRef();
+
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 		setFormData((prevData) => ({
@@ -16,21 +19,27 @@ export default function TalkingUs() {
 		}));
 	};
 
-	const handleSubmit = async (e) => {
+	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		try {
-			const response = await axios.post('/api/sendEmail', formData);
-			console.log(response.data);
-			alert('Mensagem enviada com sucesso!');
-			setFormData({ name: '', email: '', message: '' });
-		} catch (error) {
-			console.error(
-				'Erro ao enviar o e-mail:',
-				error.response?.data || error.message
+		emailjs
+			.sendForm(
+				'service_o5jb08d',
+				'template_bvx6xu3', 
+				formRef.current,
+				'6yNv4dx1ER555Hsbh'
+			)
+			.then(
+				(result) => {
+					console.log('Email enviado com sucesso!', result.text);
+					alert('Mensagem enviada com sucesso!');
+					setFormData({ name: '', email: '', message: '' });
+				},
+				(error) => {
+					console.error('Erro ao enviar email:', error.text);
+					alert('Falha ao enviar a mensagem. Tente novamente.');
+				}
 			);
-			alert('Erro ao enviar a mensagem.');
-		}
 	};
 
 	return (
@@ -44,7 +53,7 @@ export default function TalkingUs() {
 					<Msg />
 					<span>(51) 993.483.947</span>
 				</div>
-				<form onSubmit={handleSubmit} className={styles.form}>
+				<form ref={formRef} onSubmit={handleSubmit} className={styles.form}>
 					<div className={styles.inputWrapper}>
 						<input
 							type="text"
