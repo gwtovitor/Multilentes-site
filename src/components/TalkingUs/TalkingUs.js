@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from './talkingUs.module.scss';
 import { Mail, Msg } from '../utils/icons';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function TalkingUs() {
 	const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ export default function TalkingUs() {
 		emailjs
 			.sendForm(
 				'service_o5jb08d',
-				'template_bvx6xu3', 
+				'template_bvx6xu3',
 				formRef.current,
 				'6yNv4dx1ER555Hsbh'
 			)
@@ -53,7 +54,11 @@ export default function TalkingUs() {
 					<Msg />
 					<span>(51) 993.483.947</span>
 				</div>
-				<form ref={formRef} onSubmit={handleSubmit} className={styles.form}>
+				<form
+					ref={formRef}
+					onSubmit={handleSubmit}
+					className={styles.form}
+				>
 					<div className={styles.inputWrapper}>
 						<input
 							type="text"
@@ -79,9 +84,17 @@ export default function TalkingUs() {
 						onChange={handleChange}
 						required
 					/>
-					<button type="submit" className={styles.btn}>
-						Enviar
-					</button>
+					<div className={styles.wrapperFooter}>
+						<ReCAPTCHA
+							sitekey={process.env.REACT_APP_RECATPCHA_KEY}
+							// onChange={onChange}
+							onChange={(e) => console.log(e)}
+						/>
+
+						<button type="submit" className={styles.btn}>
+							Enviar
+						</button>
+					</div>
 				</form>
 			</div>
 			<div className={styles.imgWrapper}>
