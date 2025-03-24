@@ -10,6 +10,8 @@ export default function TalkingUs() {
 		email: '',
 		message: '',
 	});
+	const [captchaValido, setCaptchaValido] = useState(null); // 👈 novo estado
+
 	const formRef = useRef();
 
 	const handleChange = (e) => {
@@ -20,8 +22,17 @@ export default function TalkingUs() {
 		}));
 	};
 
+	const handleCaptchaChange = (value) => {
+		setCaptchaValido(value); // 👈 atualiza se reCAPTCHA foi preenchido
+	};
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
+
+		if (!captchaValido) {
+			alert('Por favor, confirme o CAPTCHA antes de enviar.');
+			return;
+		}
 
 		emailjs
 			.sendForm(
@@ -35,6 +46,7 @@ export default function TalkingUs() {
 					console.log('Email enviado com sucesso!', result.text);
 					alert('Mensagem enviada com sucesso!');
 					setFormData({ name: '', email: '', message: '' });
+					setCaptchaValido(null); // reseta captcha
 				},
 				(error) => {
 					console.error('Erro ao enviar email:', error.text);
@@ -87,11 +99,13 @@ export default function TalkingUs() {
 					<div className={styles.wrapperFooter}>
 						<ReCAPTCHA
 							sitekey={process.env.REACT_APP_RECATPCHA_KEY}
-							// onChange={onChange}
-							onChange={(e) => console.log(e)}
+							onChange={handleCaptchaChange}
 						/>
-
-						<button type="submit" className={styles.btn}>
+						<button
+							type="submit"
+							className={styles.btn}
+							disabled={!captchaValido}
+						>
 							Enviar
 						</button>
 					</div>
