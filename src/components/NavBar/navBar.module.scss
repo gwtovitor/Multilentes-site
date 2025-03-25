@@ -3,7 +3,8 @@
 	width: 100%;
 	*{
 		img{
-			width: 120%;
+			width: 70%;
+			height: 30%;
 		}
 	}
 	> div {
@@ -19,6 +20,12 @@
 		> div {
 			padding: 1rem;
 			justify-content: space-between;
+		}
+		*{
+			img{
+				width: 70%;
+				height: 30%;
+			}
 		}
 	}
 }
