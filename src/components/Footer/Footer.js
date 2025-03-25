@@ -23,7 +23,7 @@ export default function Footer() {
 						<img src="/assets/logoBgBlack.png" />
 						<span>
 							Avenida São Pedro, 720 sala 201- Bairro São Geraldo-
-							Porto Alegre- RS 90020-011
+							Porto Alegre- RS 90230-123
 						</span>
 						<span>Estacionamento av. São Pedro, 754 e 733</span>
 						<span>Segunda a sexta das 9h às 17:30</span>

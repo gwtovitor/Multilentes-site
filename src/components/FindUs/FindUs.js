@@ -18,7 +18,7 @@ export default function FindUs() {
 						<Location />
 						<span>
 							Avenida São Pedro, Nº 720, Sala 201- Bairro São Geraldo-
-							Porto Alegre- RS 90020-011
+							Porto Alegre- RS 90230-123
 						</span>
 					</div>
 					<div className={styles.wrapper}>
