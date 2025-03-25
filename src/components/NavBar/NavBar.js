@@ -44,7 +44,7 @@ export default function NavBar() {
 
 	return (
 		<div className={styles.navBar}>
-			<Navbar {...props} />
+			<Navbar  {...props} />
 		</div>
 	);
 }
