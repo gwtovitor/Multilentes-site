@@ -143,13 +143,14 @@
 			.imgLeft {
 				width: 100%;
 				.image1 {
-					display: none;
-				}
-				.image2 {
-					width: 90%;
+						width: 90%;
 					align-self: center;
 					// border: 1px solid red;
 					border-radius: 1rem 1rem 0rem 0rem;
+				}
+				.image2 {
+					display: none;
+				
 				}
 			}
 			.imgRigth {
