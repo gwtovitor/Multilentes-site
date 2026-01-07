@@ -102,6 +102,7 @@ export default function TalkingUs() {
 					/>
 					<div className={styles.wrapperFooter}>
 						<ReCAPTCHA
+						className={styles.captcha}
 							sitekey={process.env.REACT_APP_RECATPCHA_KEY}
 							onChange={handleCaptchaChange}
 						/>
