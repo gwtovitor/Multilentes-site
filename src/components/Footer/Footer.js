@@ -30,7 +30,7 @@ export default function Footer() {
 						</span>
 						<span>Estacionamento av. São Pedro, 754 e 733</span>
 						<span>Segunda a sexta das 9h às 17:30</span>
-						<span>Sábado das 9h às 12:00</span>
+						<span>Sábado das 9h às 12:00 (por agendamento)</span>
 						<span>multilentes@multilentes.com.br</span>
 						<span>(51) 3012-0226</span>
 						<span>CNPJ: 55.691.684/0001-07</span>

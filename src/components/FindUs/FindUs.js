@@ -27,7 +27,7 @@ export default function FindUs() {
 					</div>
 					<div className={styles.wrapper}>
 						<Hour />
-						<span>Sábado das 9h às 12:00</span>
+						<span>Sábado das 9h às 12:00 (por agendamento)</span>
 					</div>
 				</div>
 			</div>
