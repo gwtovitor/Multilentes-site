@@ -39,20 +39,24 @@ export default function HomeView() {
 					<img
 						className={styles.image1}
 						src="/assets/HomeView/1.jpg"
+						alt="Atendimento da Optica Multilentes"
 					/>
 					<img
 						className={styles.image2}
 						src="/assets/HomeView/3.jpg"
+						alt="Exposicao de oculos"
 					/>
 				</div>
 				<div className={styles.imgRigth}>
 					<img
 						className={styles.image3}
 						src="/assets/HomeView/2.jpg"
+						alt="Selecao de armacoes"
 					/>
 					<img
 						className={styles.image4}
 						src="/assets/HomeView/4.jpg"
+						alt="Cliente experimentando oculos"
 					/>
 				</div>
 			</div>

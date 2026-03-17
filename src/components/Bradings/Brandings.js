@@ -16,6 +16,7 @@ export default function Brandings() {
 					<img
 						className={styles.img}
 						src={image}
+						alt={`Marca parceira ${i + 1}`}
 						key={`image_${i}`}
 					/>
 				))}

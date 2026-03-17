@@ -24,7 +24,7 @@ export default function ImageView() {
 function ImageViewComponent({ image, text }) {
 	return (
 		<div className={styles.internalImageView}>
-			<img src={image} />
+			<img src={image} alt={text} />
 			<div className={styles.footer}>
 				<DashedLine />
 				<span>{text}</span>

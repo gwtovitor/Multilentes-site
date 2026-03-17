@@ -10,7 +10,7 @@ export default function WppBtn(){
 
     return(
         <div className={styles.wpp}>
-            <img onClick={()=>{openWhatsapp()}} src='/assets/wpp/wpp.png'/>
+            <img onClick={()=>{openWhatsapp()}} src='/assets/wpp/wpp.png' alt='Abrir conversa no WhatsApp'/>
         </div>
     )
 }

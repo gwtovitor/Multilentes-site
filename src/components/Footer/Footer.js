@@ -20,7 +20,10 @@ export default function Footer() {
 			<div className={styles.footer}>
 				<div className={styles.header}>
 					<div className={styles.leftSide}>
-						<img src="/assets/logoBgBlack.png" />
+						<img
+							src="/assets/logoBgBlack.png"
+							alt="Logo da Optica Multilentes"
+						/>
 						<span>
 							Avenida São Pedro, 720 sala 201- Bairro São Geraldo-
 							Porto Alegre- RS 90230-123
