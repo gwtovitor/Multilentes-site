@@ -24,6 +24,9 @@ export default function FindUs() {
 					<div className={styles.wrapper}>
 						<Hour />
 						<span>Segunda-feira á Sexta-feira das 9h às 17:30</span>
+					</div>
+					<div className={styles.wrapper}>
+						<Hour />
 						<span>Sábado das 9h às 12:00</span>
 					</div>
 				</div>
